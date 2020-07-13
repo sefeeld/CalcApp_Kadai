@@ -13,7 +13,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="何か数値を入力して下さい"
+        android:hint="数値（少数可）を入力してください"
         android:inputType="numberDecimal"
         android:id="@+id/editText1"/>
 
@@ -21,7 +21,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/editText1"
-        android:text="何か数値を入力して下さい"
+        android:hint="数値（少数可）を入力してください"
         android:inputType="numberDecimal"
         android:id="@+id/editText2"/>
 
