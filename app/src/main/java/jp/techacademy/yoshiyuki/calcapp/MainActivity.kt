@@ -20,13 +20,21 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onClick(v: View) {
 
-        val num1= editText1.text.toString().toDouble()
-        val num2= editText2.text.toString().toDouble()
+        val num1:Double
+        val num2:Double
         var num3:Double = 0.0
 
-        if (num1 != null && num2 != null) {
+        if (editText1.text.toString().isEmpty() ) {
+
+           //Edittextが空なら何もしない（計算結果は０になる）
+
+        }else{
+            //Edittextが空でなければ変数にセット
+            num1= editText1.text.toString().toDouble()
+            num2= editText2.text.toString().toDouble()
+
             /*どのボタンが押されたか制御
-         １：＋　２：－　３：×　４：÷*/
+            １：＋　２：－　３：×　４：÷*/
             if (v.id == R.id.button1) {
                 num3 = num1 + num2
             } else if (v.id == R.id.button2) {
